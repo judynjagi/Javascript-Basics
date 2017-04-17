@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Getting started with Javascript</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style >
+		body {padding: 30px; }
+	</style>
+</head>
+<body>
+
+<script>
+// strings
+'this is my string';
+'my second string';
+"my name is Judy";
+
+// numbers
+10.0
+500
+3.41
+
+// booleans(truthy/falsy)
+true;
+false;
+console.log(Boolean('this is my string'))
+
+// specials
+let user;
+console.log(user);
+null; // no value
+let chris = null;
+NaN; //Not a number
+
+//objects
+const user1 = {
+	name: 'Judy',
+	username: 'juju'
+
+};
+console.log(user1);
+console.log(user1.name);
+
+// array (store multiple items)
+const users = ['chris', 'nick', 'judy'];
+
+console.log(users[0]);
+
+const superusers = [
+{name: 'judy'},
+{name: 'james'},
+{name: 'jane'}
+
+];
+console.log(superusers[2].name)
+
+// declaring variables
+var thing = 'first';
+const otherthing = 'second'; 
+{name : 'yep'}// cannnot reassign variable, but you can reassign properties eg
+let newthing = 'third'; // allows you to reassign
+
+otherthing = 'newthing'
+
+	
+</script>
+
+</body>
+</html>

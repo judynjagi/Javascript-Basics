@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Getting started with Javascript</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style >
+		body {padding: 30px; }
+	</style>
+</head>
+<body>
+
+<script>
+const original = 'chris';
+const clone = 'CHRIS';
+console.groupCollapsed('String');
+	console.log(original == clone); // false
+	console.log(original == 'chris'); //true
+	console.log(original == clone.toLowerCase());
+console.groupEnd()
+
+const num1= 10;
+const num2 = '10';
+console.groupCollapsed('Numbers');
+	console.log(num1 == num2); // true because its conversion
+	console.log(num1 === num2); //false because it checks the type as well
+console.groupEnd()
+
+let what;
+let thing = null;
+
+console.groupCollapsed('Booleans');
+	console.log(Boolean(what)); // true because its conversion
+	console.log(Boolean(thing)); //false because it checks the type as well
+	console.log(Boolean(num1)); 
+	console.log(Boolean(num2)); 
+	console.log(Boolean({})); // true 
+	console.log(Boolean([])); 
+console.groupEnd()
+
+const firtsarray = [1,2,3];
+const secondsarray = [1,2,3];
+const firtsobj = {name: 'judy}';
+const secondobj = {name: 'judy}';
+
+console.groupCollapsed('Booleans');
+	console.log(Boolean(firtsarray == secondsarray)); // false because its conversion
+	console.log(Boolean(firtsobj == secondsobj)); // false
+
+console.groupEnd()
+
+</script>
+
+</body>
+</html>
